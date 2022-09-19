@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>MY PROFILE PAGES</title>
+    <link rel="stylesheet" href="style.css">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <nav class="container-nav">
+        <div class="left-nav">
+            <ul>
+                <li>
+                    <a href="#"><img src="assets/logo.dumbways.png" alt=""></a>
+                </li>
+                <li>
+                    <a href="">Home</a>
+                </li>
+                <li>
+                    <a style="font-weight: bold;" href="">My Project</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="right-nav">
+            <button>Contact Me</button>
+        </div>
+    </nav>
+
+    <div>
+        <section class="top-section">
+              
+                <form onsubmit="addData(event)" class="form">
+                    <div class="add-my-project">
+                        <h1>
+                            ADD MY PROJECT
+                        </h1>
+                    </div>
+
+                    <div class="project-name">
+                        <label for="project-name">Project Name</label>
+                        <input type="text" id="project-name">
+                    </div>
+
+                    <div class="date">
+                        <div class="date-left">
+                            <label for="start-date">Start Date</label>
+                            <input type="date" id="start-date">
+                        </div>
+
+                        <div class="date-right">
+                            <label for="end-date">End Date</label>
+                            <input type="date" id="end-date">
+                        </div>
+                    </div>
+
+                    <div class="description">
+                        <label for="description">Description</label>
+                        <textarea id="description"></textarea>
+                    </div>
+
+                    <div>
+                        <div>
+                            <label for="technologies">Technologies</label>
+                        </div>
+                        <div class="checkbox">
+                            <table class="table">
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" id="nodejs">
+                                        <label>Node Js</label>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="nextjs">
+                                        <label>Next Js</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" id="reactjs">
+                                        <label>React Js</label>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="typescript">
+                                        <label>TypeScript</label>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="upload-image">Upload Image</label>
+                        <div class="upload-image">
+                            <div><label for="upload-image">Choose</label></div>
+                            <div><input type="file" id="upload-image" hidden></div>
+                            <div><label for="upload-image"><i class="fa-solid fa-paperclip"></i></label></div>  
+                        </div>
+                    </div>
+
+                    <div class="button">
+                        <button>submit</button>
+                    </div>
+                </form>
+        </section>
+    
+        <section class="bottom-section">
+
+            <div>
+                <h1 class="my-project">
+                    MY PROJECT
+                </h1>
+            </div>
+
+            <div class="container-content" id="container-content">
+
+                <div class="card-id"  >
+                    <div class="title">
+                        <h2>Project Dumbways</h2>
+                    </div>
+
+                    <img src="assets/logo.dumbways.png" alt="">
+
+                    <div class="durasi">
+                        <h3>Durasi :</h3>
+                        <p>12-9-2022 until 17-9-2022</p>
+                    </div>
+
+                    <div class="description">
+                        <p>This my Dumbways Project</p>
+                    </div>
+
+                    <div>
+                        <i class="fa-brands fa-google-play"></i>
+                        <i class="fa-brands fa-apple"></i>
+                        <i class="fa-brands fa-java"></i>
+                    </div>
+
+                    <div class="button-edit-delete">
+                        <button class="edit">Edit</button>
+                        <button class="delete">Delete</button>
+                    </div>
+                </div>
+                                   
+            </div>
+            
+        </section>
+
+        <script src="blog.js"></script>
+    </div>
+   
+</body>
+</html>
